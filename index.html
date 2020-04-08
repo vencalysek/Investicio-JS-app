@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Investicio | Simple app for calculation of your investments</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd0029d475.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <header>
+            <div class="app-name">
+                <h1>investicio</h1>
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="app-description">
+                <h2>calculate return on your invetments</h2>
+            </div>
+        </header>
+
+
+        <main>
+
+            <input type="text" class="description" placeholder="Add description">
+
+            <!-- * * * * * *     input section   * * * * * * -->
+
+            <div class="item">
+                <label for="initValue">Initial value of the investment:</label>
+                <input type="number" class="initValue" name="initValue" placeholder="Initial value">
+            </div>
+
+            <div class="item">
+                <label for="incomeMonth">Monthly income:</label>
+                <input type="number" class="incomeMonth" name="incomeMonth" placeholder="Inc per month">
+            </div>
+
+            <div class="item">
+                <label for="increaseYear">Yearly increase:</label>
+                <input type="number" class="increaseYear" name="increaseYear" placeholder="Inc increase in %">
+            </div>
+
+            <div class="item">
+                <label for="estimatedValueYearsAfter">Estimated value after years:</label>
+                <input type="number" class="estimatedValueYearsAfter" name="estimatedValueYearsAfter"
+                    placeholder="Years to calculate">
+            </div>
+
+            <!-- * * * * * *     buttons     * * * * * * -->
+            <div class="line"></div>
+
+            <div class="btn-container">
+                <button class="calculate-btn">calculate</button>
+            </div>
+
+            <div class="line"></div>
+
+            <!-- * * * * * *   results     * * * * * * -->
+
+            <div class="item">
+                <p>Estimated return of investment: </p>
+                <p class="estimatedReturn"></p>
+            </div>
+
+            <div class="item">
+                <p>Estimated value after years: </p>
+                <p class="estimatedValue"></p>
+            </div>
+
+            <!-- * * * * * *   result list     * * * * * * -->
+
+            <div class="results">
+                <!-- <div class="line"></div>
+                <div class="result">
+                    <div class="result-name-container">
+                        <h2>Description</h2>
+                        <i class="fas fa-angle-double-down"></i>
+                            
+                    </div>
+                    <div class="result-value-container">
+                        <div class="result-item">
+                            <p>Initial value:</p>
+                            <p class="init-value">initValue</p>
+                        </div>
+
+                        <div class="result-item">
+                            <p>Monthly income:</p>
+                            <p class="month-value">monthIncome</p>
+                        </div>
+                        
+                        <div class="result-item">
+                            <p>Estimated return:</p>
+                            <p class="return">estReturn</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+
+
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
